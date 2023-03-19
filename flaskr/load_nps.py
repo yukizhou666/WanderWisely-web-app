@@ -258,5 +258,6 @@ if __name__ == '__main__':
     auth = uf.load_yaml(auth_config_path).NPS
     nps_data_config = uf.ConfigClass(uf.load_yaml(data_config_path).NPS)
     nps_data_retriever = NPSdataRetriever(auth, nps_data_config)
-    data = nps_data_retriever.get_thingstodo()
+    data = nps_data_retriever.get_places()
+
 
